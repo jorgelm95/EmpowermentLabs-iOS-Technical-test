@@ -11,6 +11,23 @@
 		7D72386D2976356000CA2315 /* RecipeAppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7238622976356000CA2315 /* RecipeAppData.framework */; };
 		7D7238722976356000CA2315 /* RecipeAppDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7238712976356000CA2315 /* RecipeAppDataTests.swift */; };
 		7D7238732976356000CA2315 /* RecipeAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7238652976356000CA2315 /* RecipeAppData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D7239052976365100CA2315 /* RecipeAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7239042976365100CA2315 /* RecipeAppDomain.framework */; };
+		7D7239062976365100CA2315 /* RecipeAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7239042976365100CA2315 /* RecipeAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D72390D297636A100CA2315 /* ApiRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72390C297636A100CA2315 /* ApiRecipe.swift */; };
+		7D72390F297636C100CA2315 /* APIRecipeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72390E297636C100CA2315 /* APIRecipeResult.swift */; };
+		7D723911297636E400CA2315 /* APIRecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D723910297636E400CA2315 /* APIRecipeDetail.swift */; };
+		7D7239152976371E00CA2315 /* APIContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7239142976371E00CA2315 /* APIContentType.swift */; };
+		7D7239172976375300CA2315 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7239162976375300CA2315 /* APIMethod.swift */; };
+		7D7239192976376800CA2315 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7239182976376800CA2315 /* APIRequest.swift */; };
+		7D72391B2976378300CA2315 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72391A2976378300CA2315 /* RestClient.swift */; };
+		7D72391D297637C500CA2315 /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72391C297637C500CA2315 /* NetworkServiceType.swift */; };
+		7D7239222976383300CA2315 /* RecipeDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7239212976383300CA2315 /* RecipeDetailRepository.swift */; };
+		7D723924297638CB00CA2315 /* RecipeListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D723923297638CB00CA2315 /* RecipeListRepository.swift */; };
+		7D7239282976390D00CA2315 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7239272976390D00CA2315 /* DataConstants.swift */; };
+		7D72392A2976392C00CA2315 /* BaseWrapperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7239292976392C00CA2315 /* BaseWrapperType.swift */; };
+		7D72392C2976393F00CA2315 /* RecipeDetailWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72392B2976393F00CA2315 /* RecipeDetailWrapper.swift */; };
+		7D72392E2976394C00CA2315 /* RecipeResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72392D2976394C00CA2315 /* RecipeResultWrapper.swift */; };
+		7D7239302976395B00CA2315 /* RecipeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72392F2976395B00CA2315 /* RecipeWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +40,42 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7D7239072976365100CA2315 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7D7239062976365100CA2315 /* RecipeAppDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7D7238622976356000CA2315 /* RecipeAppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RecipeAppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7238652976356000CA2315 /* RecipeAppData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeAppData.h; sourceTree = "<group>"; };
 		7D7238662976356000CA2315 /* RecipeAppData.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RecipeAppData.docc; sourceTree = "<group>"; };
 		7D72386C2976356000CA2315 /* RecipeAppDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7238712976356000CA2315 /* RecipeAppDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppDataTests.swift; sourceTree = "<group>"; };
+		7D7239042976365100CA2315 /* RecipeAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RecipeAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D72390C297636A100CA2315 /* ApiRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRecipe.swift; sourceTree = "<group>"; };
+		7D72390E297636C100CA2315 /* APIRecipeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRecipeResult.swift; sourceTree = "<group>"; };
+		7D723910297636E400CA2315 /* APIRecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRecipeDetail.swift; sourceTree = "<group>"; };
+		7D7239142976371E00CA2315 /* APIContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIContentType.swift; sourceTree = "<group>"; };
+		7D7239162976375300CA2315 /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
+		7D7239182976376800CA2315 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		7D72391A2976378300CA2315 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		7D72391C297637C500CA2315 /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
+		7D7239212976383300CA2315 /* RecipeDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailRepository.swift; sourceTree = "<group>"; };
+		7D723923297638CB00CA2315 /* RecipeListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRepository.swift; sourceTree = "<group>"; };
+		7D7239272976390D00CA2315 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
+		7D7239292976392C00CA2315 /* BaseWrapperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWrapperType.swift; sourceTree = "<group>"; };
+		7D72392B2976393F00CA2315 /* RecipeDetailWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailWrapper.swift; sourceTree = "<group>"; };
+		7D72392D2976394C00CA2315 /* RecipeResultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResultWrapper.swift; sourceTree = "<group>"; };
+		7D72392F2976395B00CA2315 /* RecipeWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7239052976365100CA2315 /* RecipeAppDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +104,7 @@
 				7D7238642976356000CA2315 /* RecipeAppData */,
 				7D7238702976356000CA2315 /* RecipeAppDataTests */,
 				7D7238632976356000CA2315 /* Products */,
+				7D7239032976365100CA2315 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +120,11 @@
 		7D7238642976356000CA2315 /* RecipeAppData */ = {
 			isa = PBXGroup;
 			children = (
+				7D723926297638EF00CA2315 /* Wrappers */,
+				7D723925297638E900CA2315 /* Utils */,
+				7D72391E297637F000CA2315 /* Repositories */,
+				7D7239122976370200CA2315 /* Network */,
+				7D7239082976365B00CA2315 /* Models */,
 				7D7238652976356000CA2315 /* RecipeAppData.h */,
 				7D7238662976356000CA2315 /* RecipeAppData.docc */,
 			);
@@ -83,6 +137,104 @@
 				7D7238712976356000CA2315 /* RecipeAppDataTests.swift */,
 			);
 			path = RecipeAppDataTests;
+			sourceTree = "<group>";
+		};
+		7D7239032976365100CA2315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D7239042976365100CA2315 /* RecipeAppDomain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D7239082976365B00CA2315 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D72390B2976367900CA2315 /* RecipeDetail */,
+				7D7239092976366600CA2315 /* RecipeList */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D7239092976366600CA2315 /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				7D72390C297636A100CA2315 /* ApiRecipe.swift */,
+				7D72390E297636C100CA2315 /* APIRecipeResult.swift */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		7D72390B2976367900CA2315 /* RecipeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7D723910297636E400CA2315 /* APIRecipeDetail.swift */,
+			);
+			path = RecipeDetail;
+			sourceTree = "<group>";
+		};
+		7D7239122976370200CA2315 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7D7239132976370B00CA2315 /* Client */,
+				7D72391C297637C500CA2315 /* NetworkServiceType.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7D7239132976370B00CA2315 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				7D7239142976371E00CA2315 /* APIContentType.swift */,
+				7D7239162976375300CA2315 /* APIMethod.swift */,
+				7D7239182976376800CA2315 /* APIRequest.swift */,
+				7D72391A2976378300CA2315 /* RestClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		7D72391E297637F000CA2315 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7D7239202976380500CA2315 /* RecipeDetail */,
+				7D72391F297637FB00CA2315 /* RecipeList */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7D72391F297637FB00CA2315 /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				7D723923297638CB00CA2315 /* RecipeListRepository.swift */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		7D7239202976380500CA2315 /* RecipeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7D7239212976383300CA2315 /* RecipeDetailRepository.swift */,
+			);
+			path = RecipeDetail;
+			sourceTree = "<group>";
+		};
+		7D723925297638E900CA2315 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7D7239272976390D00CA2315 /* DataConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7D723926297638EF00CA2315 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				7D7239292976392C00CA2315 /* BaseWrapperType.swift */,
+				7D72392B2976393F00CA2315 /* RecipeDetailWrapper.swift */,
+				7D72392D2976394C00CA2315 /* RecipeResultWrapper.swift */,
+				7D72392F2976395B00CA2315 /* RecipeWrapper.swift */,
+			);
+			path = Wrappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +259,7 @@
 				7D72385E2976356000CA2315 /* Sources */,
 				7D72385F2976356000CA2315 /* Frameworks */,
 				7D7238602976356000CA2315 /* Resources */,
+				7D7239072976365100CA2315 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +347,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D72391D297637C500CA2315 /* NetworkServiceType.swift in Sources */,
+				7D7239282976390D00CA2315 /* DataConstants.swift in Sources */,
+				7D72391B2976378300CA2315 /* RestClient.swift in Sources */,
+				7D7239152976371E00CA2315 /* APIContentType.swift in Sources */,
+				7D7239192976376800CA2315 /* APIRequest.swift in Sources */,
+				7D72390D297636A100CA2315 /* ApiRecipe.swift in Sources */,
+				7D72392A2976392C00CA2315 /* BaseWrapperType.swift in Sources */,
+				7D7239302976395B00CA2315 /* RecipeWrapper.swift in Sources */,
+				7D723911297636E400CA2315 /* APIRecipeDetail.swift in Sources */,
+				7D72390F297636C100CA2315 /* APIRecipeResult.swift in Sources */,
 				7D7238672976356000CA2315 /* RecipeAppData.docc in Sources */,
+				7D7239222976383300CA2315 /* RecipeDetailRepository.swift in Sources */,
+				7D7239172976375300CA2315 /* APIMethod.swift in Sources */,
+				7D72392E2976394C00CA2315 /* RecipeResultWrapper.swift in Sources */,
+				7D72392C2976393F00CA2315 /* RecipeDetailWrapper.swift in Sources */,
+				7D723924297638CB00CA2315 /* RecipeListRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +564,7 @@
 		7D72387A2976356000CA2315 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VT2JPJ6QK2;
@@ -412,6 +581,7 @@
 		7D72387B2976356000CA2315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VT2JPJ6QK2;
