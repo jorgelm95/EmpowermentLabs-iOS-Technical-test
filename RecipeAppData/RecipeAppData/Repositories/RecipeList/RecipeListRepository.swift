@@ -55,6 +55,7 @@ extension RecipeListRepository: RecipeListRepositoryType {
                 let endpoint = self.buildEndpointWithParams(params)
                 return client.request(endpoint, queue: .main, retries: 1)
                     .flatMap{ self.mapData($0) }
+                    .receive(on: DispatchQueue.main)
                     .eraseToAnyPublisher()
             } catch {
                 return Fail(error: error as! NetworkServiceError).eraseToAnyPublisher()

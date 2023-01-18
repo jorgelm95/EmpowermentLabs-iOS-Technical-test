@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D170B992977699D002AF91B /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D170B982977699D002AF91B /* RecipeDetailView.swift */; };
+		7D170B9B29776CB0002AF91B /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D170B9A29776CB0002AF91B /* FavoriteButtonView.swift */; };
+		7D170B9E29778549002AF91B /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D170B9D29778549002AF91B /* RecipeDetailViewModel.swift */; };
+		7D64A84C297720C9008F487D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64A84B297720C9008F487D /* SplashScreenView.swift */; };
+		7D64A84E29772BF4008F487D /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64A84D29772BF4008F487D /* RecipeCardView.swift */; };
+		7D64A85129772C65008F487D /* CardViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64A85029772C65008F487D /* CardViewModifier.swift */; };
+		7D64A855297732A7008F487D /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64A854297732A7008F487D /* RecipeListViewModel.swift */; };
+		7D64A858297732CA008F487D /* RecipeAppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D64A857297732CA008F487D /* RecipeAppData.framework */; };
+		7D64A859297732CA008F487D /* RecipeAppData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D64A857297732CA008F487D /* RecipeAppData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D64A85C297732CE008F487D /* RecipeAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D64A85B297732CE008F487D /* RecipeAppDomain.framework */; };
+		7D64A85D297732CE008F487D /* RecipeAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D64A85B297732CE008F487D /* RecipeAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D64A85F297739ED008F487D /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64A85E297739ED008F487D /* RecipeListView.swift */; };
 		7D7238DA297635CD00CA2315 /* RecipeAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7238D9297635CD00CA2315 /* RecipeAppUIApp.swift */; };
 		7D7238DC297635CD00CA2315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7238DB297635CD00CA2315 /* ContentView.swift */; };
 		7D7238DE297635CE00CA2315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7238DD297635CE00CA2315 /* Assets.xcassets */; };
@@ -33,7 +45,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7D64A85A297732CA008F487D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7D64A85D297732CE008F487D /* RecipeAppDomain.framework in Embed Frameworks */,
+				7D64A859297732CA008F487D /* RecipeAppData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7D170B982977699D002AF91B /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		7D170B9A29776CB0002AF91B /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
+		7D170B9D29778549002AF91B /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		7D64A84B297720C9008F487D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		7D64A84D29772BF4008F487D /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
+		7D64A85029772C65008F487D /* CardViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModifier.swift; sourceTree = "<group>"; };
+		7D64A854297732A7008F487D /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		7D64A857297732CA008F487D /* RecipeAppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RecipeAppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D64A85B297732CE008F487D /* RecipeAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RecipeAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D64A85E297739ED008F487D /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		7D7238D6297635CD00CA2315 /* RecipeAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7238D9297635CD00CA2315 /* RecipeAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppUIApp.swift; sourceTree = "<group>"; };
 		7D7238DB297635CD00CA2315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D64A85C297732CE008F487D /* RecipeAppDomain.framework in Frameworks */,
+				7D64A858297732CA008F487D /* RecipeAppData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +110,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D170B9729776986002AF91B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D170B982977699D002AF91B /* RecipeDetailView.swift */,
+				7D170B9A29776CB0002AF91B /* FavoriteButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D170B9C29778536002AF91B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D170B9D29778549002AF91B /* RecipeDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D64A84829772090008F487D /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7D64A84B297720C9008F487D /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		7D64A8492977209A008F487D /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				7D64A85329773297008F487D /* ViewModel */,
+				7D64A8522977328C008F487D /* Views */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		7D64A84A297720A2008F487D /* RecipeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7D170B9C29778536002AF91B /* ViewModel */,
+				7D170B9729776986002AF91B /* Views */,
+			);
+			path = RecipeDetail;
+			sourceTree = "<group>";
+		};
+		7D64A84F29772C47008F487D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7D64A85029772C65008F487D /* CardViewModifier.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7D64A8522977328C008F487D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D64A84D29772BF4008F487D /* RecipeCardView.swift */,
+				7D64A85E297739ED008F487D /* RecipeListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D64A85329773297008F487D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D64A854297732A7008F487D /* RecipeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D64A856297732CA008F487D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D64A85B297732CE008F487D /* RecipeAppDomain.framework */,
+				7D64A857297732CA008F487D /* RecipeAppData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7D7238CD297635CD00CA2315 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +194,7 @@
 				7D7238E9297635CE00CA2315 /* RecipeAppUITests */,
 				7D7238F3297635CE00CA2315 /* RecipeAppUIUITests */,
 				7D7238D7297635CD00CA2315 /* Products */,
+				7D64A856297732CA008F487D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +211,10 @@
 		7D7238D8297635CD00CA2315 /* RecipeAppUI */ = {
 			isa = PBXGroup;
 			children = (
+				7D64A84F29772C47008F487D /* Utils */,
+				7D64A84A297720A2008F487D /* RecipeDetail */,
+				7D64A8492977209A008F487D /* RecipeList */,
+				7D64A84829772090008F487D /* SplashScreen */,
 				7D7238D9297635CD00CA2315 /* RecipeAppUIApp.swift */,
 				7D7238DB297635CD00CA2315 /* ContentView.swift */,
 				7D7238DD297635CE00CA2315 /* Assets.xcassets */,
@@ -137,6 +258,7 @@
 				7D7238D2297635CD00CA2315 /* Sources */,
 				7D7238D3297635CD00CA2315 /* Frameworks */,
 				7D7238D4297635CD00CA2315 /* Resources */,
+				7D64A85A297732CA008F487D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,8 +379,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D64A84E29772BF4008F487D /* RecipeCardView.swift in Sources */,
+				7D64A85F297739ED008F487D /* RecipeListView.swift in Sources */,
 				7D7238DC297635CD00CA2315 /* ContentView.swift in Sources */,
+				7D170B9E29778549002AF91B /* RecipeDetailViewModel.swift in Sources */,
+				7D64A855297732A7008F487D /* RecipeListViewModel.swift in Sources */,
+				7D170B9B29776CB0002AF91B /* FavoriteButtonView.swift in Sources */,
+				7D64A85129772C65008F487D /* CardViewModifier.swift in Sources */,
 				7D7238DA297635CD00CA2315 /* RecipeAppUIApp.swift in Sources */,
+				7D64A84C297720C9008F487D /* SplashScreenView.swift in Sources */,
+				7D170B992977699D002AF91B /* RecipeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RecipeAppUI/Preview Content\"";
@@ -443,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RecipeAppUI/Preview Content\"";

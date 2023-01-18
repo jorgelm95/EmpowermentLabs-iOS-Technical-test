@@ -8,14 +8,14 @@
 import Foundation
 
 public struct RecipeDetail {
-    var identifier: String
-    var title: String
-    var imageURL: URL?
-    var imageType: ImageType
-    var summary: String
-    var instructions: String
-    var healthScore: String
-    var pricePerServing: String
+    public var identifier: String
+    public var title: String
+    public var imageURL: URL?
+    public var imageType: ImageType
+    public var summary: String
+    public var instructions: String
+    public var healthScore: String
+    public var pricePerServing: String
     
     public init(
         identifier: String,

@@ -9,8 +9,13 @@ import Foundation
 import Combine
 
 public struct SearchRecipeParams {
-    let query: String
-    let paging: Pagination?
+    public let query: String
+    public let paging: Pagination?
+    
+    public init(query: String, paging: Pagination?) {
+        self.query = query
+        self.paging = paging
+    }
 }
 
 public final class RecipeListUseCase: BaseUseCase<RecipeResult, SearchRecipeParams> {

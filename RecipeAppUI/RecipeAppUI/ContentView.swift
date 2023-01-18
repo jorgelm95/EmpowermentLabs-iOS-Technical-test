@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var searchText = ""
+    @State private var recipes: [String] = []
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+
+        NavigationStack {
+                   Text("Searching for \(searchText)")
+                       .navigationTitle("Recipe List")
+            List {
+                ForEach(recipes, id: \.self) { name in
+                    NavigationLink {
+                        Text(name)
+                    } label: {
+                        Text(name)
+                    }
+                }
+            }.navigationTitle("Recipes")
+            
+        }.searchable(text: $searchText)
+        
+
     }
 }
 

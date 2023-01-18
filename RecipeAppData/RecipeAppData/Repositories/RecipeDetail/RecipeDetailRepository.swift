@@ -22,7 +22,7 @@ public class RecipeDetailRepository {
         return APIRequest(
             method: .get,
             relativePath: relativePath,
-            parameters: nil,
+            parameters: [:] ,
             contentType: .URLEncoded)
     }
     

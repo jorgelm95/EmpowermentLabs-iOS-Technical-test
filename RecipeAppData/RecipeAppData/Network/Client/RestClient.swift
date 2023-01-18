@@ -19,7 +19,7 @@ public class RestClient {
     
     private let baseURL: String
     
-    init(baseURL: String) {
+    public init(baseURL: String) {
         self.baseURL = baseURL
     }
     
