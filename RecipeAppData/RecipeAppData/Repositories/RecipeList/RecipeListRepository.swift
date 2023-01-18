@@ -20,7 +20,7 @@ public class RecipeListRepository {
     private func buildEndpointWithParams(_ queryParams: [String: Any]) -> APIRequest<APIRecipeResult> {
         return APIRequest<APIRecipeResult>(
             method: .get,
-            relativePath: DataConstants.relativePath,
+            relativePath: DataConstants.endpoints.listOfRecipes,
             parameters: queryParams,
             contentType: .URLEncoded)
        }
@@ -53,7 +53,7 @@ extension RecipeListRepository: RecipeListRepositoryType {
             do {
                 let params = try getQueryParams(for: query, and: page)
                 let endpoint = self.buildEndpointWithParams(params)
-                return client.request(endpoint, queue: .main, retries: 1)
+                return client.request(endpoint, queue: .main, retries: DataConstants.numberOfRetries)
                     .flatMap{ self.mapData($0) }
                     .receive(on: DispatchQueue.main)
                     .eraseToAnyPublisher()

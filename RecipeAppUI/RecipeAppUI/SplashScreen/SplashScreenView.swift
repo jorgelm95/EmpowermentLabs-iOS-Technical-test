@@ -32,7 +32,7 @@ struct SplashScreenView: View {
                 .opacity(opacity)
                 .onAppear {
                     withAnimation(.easeIn(duration: 2.0)) {
-                        self.size = 0.3
+                        self.size = 0.2
                         self.opacity = 1.00
                     }
                 }
@@ -51,24 +51,5 @@ struct SplashScreenView: View {
 struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
         SplashScreenView()
-    }
-}
-
-
-public class Configurator {
-
-   static let client = RestClient(baseURL: "https://api.spoonacular.com")
-    
-    func injectRecipeListViewmodel() -> RecipeListViewModel {
-        let repository: RecipeListRepositoryType = RecipeListRepository(client: Configurator.client)
-        let useCase: RecipeListUseCase = RecipeListUseCase(repository: repository)
-        return RecipeListViewModel(useCase: useCase)
-    }
-    
-    func injectRecipeDetailViewModel() -> RecipeDetailViewModel {
-
-        let repository: RecipeDetailRepositoryType = RecipeDetailRepository(client: Configurator.client)
-        let useCase: RecipeDetailUseCase = RecipeDetailUseCase(repository: repository)
-        return RecipeDetailViewModel(useCase: useCase)
     }
 }

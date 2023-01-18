@@ -9,7 +9,12 @@ import Foundation
 
 struct DataConstants {
     
-    static let relativePath = "/recipes/complexSearch"
-    static let numberOfRecipes: UInt16 = 21
-
+    struct endpoints {
+        static let listOfRecipes = "/recipes/complexSearch"
+        static let recipes = "/recipes/"
+        static let information = "/information"
+    }
+    
+    static let numberOfRecipes: UInt16 = 10
+    static let numberOfRetries = 1
 }

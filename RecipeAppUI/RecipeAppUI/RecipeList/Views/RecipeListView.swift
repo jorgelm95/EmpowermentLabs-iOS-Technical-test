@@ -14,7 +14,7 @@ struct RecipeListView: View {
     
     @State private var searchText: String = ""
     
-    @ObservedObject private var ViewModel:  RecipeListViewModel = Configurator().injectRecipeListViewmodel()
+    @ObservedObject private var ViewModel:  RecipeListViewModel = DIConfigurator().injectRecipeListViewmodel()
     
     public init() {}
     
@@ -23,7 +23,7 @@ struct RecipeListView: View {
             List(self.ViewModel.recipeResul?.results ?? [], id: \.identifier) { recipe in
                 NavigationLink(destination: RecipeDetailView(
                     recipeId: String(recipe.identifier ?? 0),
-                    viewModel: Configurator().injectRecipeDetailViewModel())) {
+                    viewModel: DIConfigurator().injectRecipeDetailViewModel())) {
                         RecipeCardView(image: getImageURL(urlString: recipe.imageURL ?? ""), title: recipe.title ?? "", identifier: String(recipe.identifier ?? 0))
                     }
             }.navigationTitle("Recipes")

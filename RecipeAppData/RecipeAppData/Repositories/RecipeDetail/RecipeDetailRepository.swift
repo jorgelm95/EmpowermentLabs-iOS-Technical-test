@@ -18,7 +18,7 @@ public class RecipeDetailRepository {
     }
     
     private func buildEndpointForRecipeDetail(_ id: String) -> APIRequest<APIRecipeDetail> {
-        let relativePath = "/recipes/\(id)/information"
+        let relativePath =  "\(DataConstants.endpoints.recipes)\(id)\(DataConstants.endpoints.information)"
         return APIRequest(
             method: .get,
             relativePath: relativePath,
@@ -39,7 +39,7 @@ public class RecipeDetailRepository {
 extension RecipeDetailRepository: RecipeDetailRepositoryType {
     public func getRecipeById(_ id: String) -> AnyPublisher<RecipeDetail, NetworkServiceError> {
         
-        return client.request(buildEndpointForRecipeDetail(id), queue: .main, retries: 1)
+        return client.request(buildEndpointForRecipeDetail(id), queue: .main, retries: DataConstants.numberOfRetries)
             .flatMap({
                 self.mapData($0)
             })
