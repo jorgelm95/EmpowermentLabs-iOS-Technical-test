@@ -10,15 +10,9 @@ import Combine
 import SwiftUI
 import RecipeAppDomain
 
-public final class  RecipeListState: ObservableObject {
-    @Published var searchText: String = ""
-}
-
 public protocol RecipeListVieModelType: ObservableObject {
-    
     func searchListRecipe(query: String)
 }
-
 
 public class RecipeListViewModel: RecipeListVieModelType {
   
@@ -39,8 +33,7 @@ public class RecipeListViewModel: RecipeListVieModelType {
         self.useCase.buildUseCase(params: params).receive(on: DispatchQueue.main).sink { completion in
             switch completion {
             case .failure(let error):
-                self.isError.toggle()
-                self.errorText = error.localizedDescription
+                self.handleError(error: error)
                 debugPrint("error \(error.localizedDescription)")
             case .finished:
                 debugPrint("finalizado")
@@ -52,5 +45,18 @@ public class RecipeListViewModel: RecipeListVieModelType {
     
     public func resetList() {
         self.recipeResul = nil
+    }
+    
+    private func handleError(error: Error) {
+        self.isError.toggle()
+        guard let errorResult = error as? DomainError else {
+            return
+        }
+        
+        switch errorResult {
+        case .custom(let message):
+            self.errorText = message
+        break
+        }
     }
 }

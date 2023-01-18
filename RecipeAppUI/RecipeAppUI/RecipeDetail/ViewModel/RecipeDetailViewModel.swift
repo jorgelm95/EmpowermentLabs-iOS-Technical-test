@@ -34,8 +34,7 @@ public class RecipeDetailViewModel: RecipeDetailViewModelType  {
         self.useCase.buildUseCase(params: id).sink { completion in
             switch completion {
             case .failure(let error):
-                self.errorText = error.localizedDescription
-                self.isError.toggle()
+                self.handleError(error: error)
                 debugPrint("error \(error)")
             case .finished:
                 debugPrint("finalizado")
@@ -48,5 +47,18 @@ public class RecipeDetailViewModel: RecipeDetailViewModelType  {
     public func didTapFavoriteButton() {
         self.isFavorite = true
         print("save as favorite")
+    }
+    
+    private func handleError(error: Error) {
+        self.isError.toggle()
+        guard let errorResult = error as? DomainError else {
+            return
+        }
+        
+        switch errorResult {
+        case .custom(let message):
+            self.errorText = message
+        break
+        }
     }
 }

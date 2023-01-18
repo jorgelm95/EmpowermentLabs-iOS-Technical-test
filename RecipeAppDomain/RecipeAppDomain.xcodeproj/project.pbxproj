@@ -22,6 +22,10 @@
 		7D72395029763C1E00CA2315 /* RecipeDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72394F29763C1E00CA2315 /* RecipeDetailUseCase.swift */; };
 		7D72395229763C4100CA2315 /* RecipeListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72395129763C4100CA2315 /* RecipeListUseCase.swift */; };
 		7D72395429763C6000CA2315 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72395329763C6000CA2315 /* Pagination.swift */; };
+		7DCAE66F297837CF00EFE250 /* RecipeListUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAE66E297837CF00EFE250 /* RecipeListUseCaseTest.swift */; };
+		7DCAE67329783E9700EFE250 /* RecipeListRespositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAE67229783E9700EFE250 /* RecipeListRespositoryStub.swift */; };
+		7DCAE6752978471600EFE250 /* RecipeDetailUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAE6742978471600EFE250 /* RecipeDetailUseCaseTest.swift */; };
+		7DCAE685297853EC00EFE250 /* RecipeDetailRespositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAE684297853EC00EFE250 /* RecipeDetailRespositoryStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		7D72394F29763C1E00CA2315 /* RecipeDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailUseCase.swift; sourceTree = "<group>"; };
 		7D72395129763C4100CA2315 /* RecipeListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListUseCase.swift; sourceTree = "<group>"; };
 		7D72395329763C6000CA2315 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		7DCAE66E297837CF00EFE250 /* RecipeListUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListUseCaseTest.swift; sourceTree = "<group>"; };
+		7DCAE67229783E9700EFE250 /* RecipeListRespositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRespositoryStub.swift; sourceTree = "<group>"; };
+		7DCAE6742978471600EFE250 /* RecipeDetailUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailUseCaseTest.swift; sourceTree = "<group>"; };
+		7DCAE684297853EC00EFE250 /* RecipeDetailRespositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailRespositoryStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,8 @@
 		7D7238C1297635A100CA2315 /* RecipeAppDomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				7DCAE67029783E6800EFE250 /* Stubs */,
+				7DCAE66D297837B300EFE250 /* UseCases */,
 				7D7238C2297635A100CA2315 /* RecipeAppDomainTests.swift */,
 			);
 			path = RecipeAppDomainTests;
@@ -220,6 +230,32 @@
 				7D72395129763C4100CA2315 /* RecipeListUseCase.swift */,
 			);
 			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		7DCAE66D297837B300EFE250 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7DCAE66E297837CF00EFE250 /* RecipeListUseCaseTest.swift */,
+				7DCAE6742978471600EFE250 /* RecipeDetailUseCaseTest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7DCAE67029783E6800EFE250 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				7DCAE67129783E7100EFE250 /* Repositories */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		7DCAE67129783E7100EFE250 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7DCAE67229783E9700EFE250 /* RecipeListRespositoryStub.swift */,
+				7DCAE684297853EC00EFE250 /* RecipeDetailRespositoryStub.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,7 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DCAE6752978471600EFE250 /* RecipeDetailUseCaseTest.swift in Sources */,
+				7DCAE67329783E9700EFE250 /* RecipeListRespositoryStub.swift in Sources */,
+				7DCAE685297853EC00EFE250 /* RecipeDetailRespositoryStub.swift in Sources */,
 				7D7238C3297635A100CA2315 /* RecipeAppDomainTests.swift in Sources */,
+				7DCAE66F297837CF00EFE250 /* RecipeListUseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
