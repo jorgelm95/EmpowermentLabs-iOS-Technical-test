@@ -45,15 +45,21 @@ Generics.
 
 # Features. 
 
-Recipe List
-Recipe Detail
-Search recipes
+- Search recipes
+- Recipe List
+- Recipe Detail
 
 Unitary Test:
 Unitary test has being developed unider Test Stunt / Test Double methodology wich allow to run all test in a local environment. This methodology is based on five entities:
 
 Stub -> Used.
-Spy -> Used.
+
+
+# things I would have liked to improve in the test, 
+
+- Use a handleError for the whole app to remove that responsibility from the ViewModels.
+- Use localized strings for the texts in the. UI 
+- Use a better way to do dependency injection for each feature.
 
 # Problems in developing the test.
 
