@@ -49,6 +49,16 @@ Generics.
 - Recipe List
 - Recipe Detail
 
+I have added a condition to the search box to only make the API call if it has more than 4 characters entered to prevent a little bit too many requests to the API that may cause a buffer or memory crashes. 
+
+# Test cases
+You can search with the following cases
+pastes
+burger
+ramen
+soup
+Chocolate
+
 Unitary Test:
 Unitary test has being developed unider Test Stunt / Test Double methodology wich allow to run all test in a local environment. This methodology is based on five entities:
 
