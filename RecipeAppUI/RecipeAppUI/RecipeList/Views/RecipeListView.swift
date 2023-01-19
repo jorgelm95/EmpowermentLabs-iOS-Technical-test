@@ -46,4 +46,3 @@ struct RecipeListView: View {
         return URL(string: urlString)
     }
 }
-

@@ -36,7 +36,9 @@ struct SplashScreenView: View {
                         self.opacity = 1.00
                     }
                 }
-            }
+            }.background(content: {
+                Color(red: 216/255, green: 217/255, blue: 218/255)
+            })
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                     withAnimation {
